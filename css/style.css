@@ -3,6 +3,7 @@ body {
   font-family: prestige-elite-std, monospace;
   font-weight: 400;
   font-style: normal;
+  cursor: url(../images/cursorzwart.png), pointer;
 }
 
 /* Navigatie */
@@ -12,6 +13,7 @@ body {
   height: 3.6em;
   background: white;
   z-index: 1;
+  cursor: url(../images/cursorzwart.png), pointer;
 }
 
 .navigatie ul {
@@ -31,6 +33,7 @@ body {
   font-weight: 100;
   width: 5em;
   margin: 0.4em 0 0em 0.5em;
+  cursor: url(../images/cursorzwart.png), pointer;
 }
 
 .navigatie ul li nav{
@@ -50,6 +53,7 @@ body {
   z-index: 20;
   position: inherit;
   outline: none;
+  cursor: url(../images/cursorzwart.png), pointer;
 }
 
 .navigatie ul li nav button:first-of-type{
@@ -67,6 +71,7 @@ border-radius: 20px 0 0px 0;
   background: black;
   top: 50%;
   z-index: 1;
+  cursor: url(../images/cursorzwart.png), pointer;
 }
 
 .navigatie ul li:last-of-type {
@@ -84,6 +89,20 @@ border-radius: 20px 0 0px 0;
   border: none !important;
   outline: none;
   top: 0.5em;
+  cursor: url(../images/cursorzwart.png), pointer;
+}
+
+@keyframes ButtonVliegen {
+  0% {
+      transform: translate(0, 0);
+  }
+  100% {
+      transform: translate(0, -10em);
+  }
+}
+
+.ButtonVliegenAnimatie {
+  animation: ButtonVliegen 10s forwards;
 }
 
 .hamburgerBoven {
@@ -94,12 +113,62 @@ border-radius: 20px 0 0px 0;
   top: 40%;
 }
 
+@keyframes BovenTransform {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(-2em, 0.75em);
+  }
+}
+
+.TransformAnimatie {
+  animation: BovenTransform 1s;
+}
+
+@keyframes VleugelsBoven {
+  0% {
+    transform: translate(-2em, 0.75em);
+  }
+
+  50% {
+    transform: translate(-1.4em, 1.75em) rotate(-65deg);
+  }
+
+  100% {
+    transform: translate(-2em, 0.75em);
+  }
+}
+
+.BovenVliegen {
+  animation: VleugelsBoven 1s infinite;
+}
+
 .hamburgerOnder {
   position: absolute;
   width: 2em;
   height: 0.2em;
   background-color: black;
   top: 65%;
+}
+
+@keyframes VleugelsOnder {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(-0.57em, 1em) rotate(65deg);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.OnderVliegen {
+  animation: VleugelsOnder 1s infinite;
 }
 
 main{
@@ -111,6 +180,7 @@ main{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin: 0 0 7em 0;
+  cursor: url(../images/cursorzwart.png), pointer;
 }
 
 .welcomeSection {
@@ -127,6 +197,7 @@ main{
   overflow: hidden;
   background-color: black;
   height: 160em;
+  cursor: url(../images/cursorwit.png), pointer;
 }
 
 .lijnImg{
@@ -152,6 +223,7 @@ main{
   height: 32em;
   width: 100%;
   margin-bottom: 0.3em;
+  cursor: url(../images/cursorzwart.png), pointer;
 }
 
 .kleurenimgRechts {
@@ -202,6 +274,7 @@ footer {
   background-color: black;
   color: white;
   height: 18em;
+  cursor: url(../images/cursorwit.png), pointer;
 }
 
 .ThankYouText {
