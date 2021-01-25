@@ -1,0 +1,210 @@
+body {
+  margin: 0;
+  font-family: prestige-elite-std, monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Navigatie */
+.navigatie {
+  position: fixed;
+  width: 100%;
+  height: 3.6em;
+  background: white;
+  z-index: 1;
+}
+
+.navigatie ul {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.navigatie ul li {
+  list-style-type: none;
+  align-self: center;
+}
+
+.navigatie ul li h1{
+  font-size: 1.2em;
+  font-weight: 100;
+  width: 5em;
+  margin: 0.4em 0 0em 0.5em;
+}
+
+.navigatie ul li nav{
+  text-align: center;
+  position: relative;
+}
+
+.navigatie ul li nav button{
+  font-family: prestige-elite-std, monospace;
+  font-weight: 900;
+  font-style: normal;
+  padding: 0.5em 1.3em 0.5em 1.3em;
+  border-radius: 20px 0 20px 0;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  z-index: 20;
+  position: inherit;
+  outline: none;
+}
+
+.navigatie ul li nav button:first-of-type{
+  border-radius: 0px 0 20px 0;
+}
+
+.navigatie ul li nav button:last-of-type{
+border-radius: 20px 0 0px 0;
+}
+
+.lineNav {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: black;
+  top: 50%;
+  z-index: 1;
+}
+
+.navigatie ul li:last-of-type {
+  position: relative;
+  align-self: auto;
+}
+
+/* Hamburger menu */
+.hamburgerButton {
+  position: absolute;
+  right: 1.5em;
+  width: 3em;
+  height: 3em;
+  background: transparent;
+  border: none !important;
+  outline: none;
+  top: 0.5em;
+}
+
+.hamburgerBoven {
+  position: absolute;
+  width: 1.9em;
+  height: 0.1em;
+  background-color: black;
+  top: 40%;
+}
+
+.hamburgerOnder {
+  position: absolute;
+  width: 1.9em;
+  height: 0.1em;
+  background-color: black;
+  top: 65%;
+}
+
+main{
+  padding: 6em 0 0 0;
+}
+
+/* Section 1 */
+.welcomeGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 0 7em 0;
+}
+
+.welcomeSection {
+  grid-column: 2;
+}
+
+.welcomeImage {
+  width: 100%;
+  }
+
+/* Section 2 */
+.TakeALookSection {
+  display: block;
+  overflow: hidden;
+  background-color: black;
+  height: 160em;
+}
+
+.lijnImg{
+  width: 100%;
+}
+
+.takealookimg{
+  position: relative;
+  width: 30%;
+  margin: 2em 0 12em 0;
+  left: 35%;
+}
+
+.TakeALookText{
+  font-size: 1em;
+  color: white;
+  margin: 0 0 13em 0;
+}
+
+.ProjctSection {
+  position: relative;
+  background-color: white;
+  height: 32em;
+  width: 100%;
+  margin-bottom: 0.3em;
+}
+
+.kleurenimgRechts {
+  position: absolute;
+  height: 100%;
+  right: 0;
+}
+
+.NaamRechts {
+  font-family: 'Coda Caption', sans-serif;
+  margin: 0.05em 0.3em 0em 0em;
+  position: absolute;
+  font-weight: bold;
+  font-size: 2em;
+  right: 0;
+}
+
+.UitlegRechts {
+  font-size: 1em;
+  position: absolute;
+  margin: 4.05em 1em 0em 0em;
+  right: 0;
+}
+
+.kleurenimgLinks {
+  position: absolute;
+  height: 100%;
+  left: 0;
+}
+
+.NaamLinks {
+  font-family: 'Coda Caption', sans-serif;
+  margin: 0.05em 0em 0em 0.5em;
+  position: absolute;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.UitlegLinks {
+  font-size: 1em;
+  position: absolute;
+  margin: 4.05em 0em 0em 1em;
+}
+
+/* footer */
+footer {
+  overflow: hidden;
+  background-color: black;
+  color: white;
+  height: 18em;
+}
+
+.ThankYouText {
+  font-size: 1em;
+  margin: 0;
+}
